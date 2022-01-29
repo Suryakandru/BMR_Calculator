@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Metric')">METRIC BMR CALCULATOR</button>
+        <button class="tablinks" onclick="openCity(event, 'Imperial')">IMPERIAL BMR CALCULATOR</button>
+    </div>
+    <div id="Metric" class="tabcontent">
+        <div class="center">
+            <br /><br />
+            <label for="Gender">GENDER</label>
+            <select id="Gender" name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <br /><br />
+         
+            <label for="Age">Age:</label>
+            <input type="Number" id="age" name="age" />
+            <br /><br />
+          
+            <label for="Height">Height:</label>
+            <input type="Number" id="height" name="Height" />
+            <br /><br />
+           
+            <label for="Weight">Weight:</label>
+            <input type="Number" id="weight" name="weight" />
+        </div>
+        <br /><br />
+        <p></p>
+        <p>select your activity level:</p>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.2" name="activityLevel1" id="activityLevel1"><span class="white">I am sedentary (little or no exercise)</span><br>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.375" name="activityLevel2" id="activityLevel2"><span class="white">I am lightly active (light exercise or sports 1-3 days per week)</span><br>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.55" name="activityLevel3" id="activityLevel3"><span class="white">I am moderately active (moderate exercise or sports 3-5 days per week)</span><br>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.725" name="activityLevel4" id="activityLevel4"><span class="white">I am very active (hard exercise or sports 6-7 days per week)</span><br>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.9" name="activityLevel5" id="activityLevel5"><span class="white">I am super active(very hard exercise or sports and physical job or 2x training)</span><br>
+        <br /><br />
+              <div class="center">
+                  <input type="button" id="submit" value="CalculateBMR" onclick="bmr1()"/>
+              </div>
+    </div>
+
+
+    <div id="Imperial" class="tabcontent">
+        <div class="center">
+            <br /><br />
+            <label for="Gender">GENDER</label>
+            <select id="Gender" name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <br /><br />
+            <label for="Age">Age:</label>
+            <input type="Number" id="age" name="age" class="rcorners2" />
+            <br /><br />
+
+            <label>Your Height</label><br /><br />
+            <label for="Height">Inches:</label>
+            <input type="Number" id="height" name="Height" />
+            <br /><br />
+            <label>Your Weight</label><br /><br />
+            <label for="Weight">Pounds:</label>
+            <input type="Number" id="weight" name="weight" />
+        </div>
+        <br /><br />
+        <p></p>
+        <p>select your activity level:</p>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.2" name="activityLevel1" id="activityLevel1"><span class="white">I am sedentary (little or no exercise)</span><br>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.375" name="activityLevel2" id="activityLevel2"><span class="white">I am lightly active (light exercise or sports 1-3 days per week)</span><br>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.55" name="activityLevel3" id="activityLevel3"><span class="white">I am moderately active (moderate exercise or sports 3-5 days per week)</span><br>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.725" name="activityLevel4" id="activityLevel4"><span class="white">I am very active (hard exercise or sports 6-7 days per week)</span><br>&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="1.9" name="activityLevel5" id="activityLevel5"><span class="white">I am super active(very hard exercise or sports and physical job or 2x training)</span><br>
+        <br /><br />
+              <div class="center">
+                  <input type="button" id="submit" value="CalculateBMR" onclick="bmr2()"/>
+              </div>
+    </div>
+        <script src="assignment1.js"></script>
+</body>
+</html>
